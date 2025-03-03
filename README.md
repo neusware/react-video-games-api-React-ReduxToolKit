@@ -1,4 +1,4 @@
-# React Video-Games Web
+# React RTK Video-Games Web
 
 Este es un proyecto de una aplicación web desarrollada con React siguiendo arquitectura Redux Toolkit que utiliza la API de RAWG para mostrar información y reseñas de videojuegos. La aplicación permite a los usuarios buscar juegos, ver detalles de juegos populares y explorar una biblioteca de juegos, se encuentra desplegada en [enlace_pendiente](#).
 
