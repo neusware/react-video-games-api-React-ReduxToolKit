@@ -7,8 +7,7 @@ import "./index.css"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* Accceso al store */}
-    <Provider store={store}> 
+    <Provider store={store}> {/* Acceso al store global a traves del provider */}
       <App />
     </Provider>
   </React.StrictMode>,

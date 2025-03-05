@@ -4,8 +4,14 @@ import { Link } from "react-router-dom"
 import { searchPublishers } from "../store/publisherSlice"
 
 function PublishersPage() {
+
+  //!gestion de acciones async
   const dispatch = useDispatch()
+
+  //!acceso al estado global redux
   const { searchResults, status, error, totalPages } = useSelector((state) => state.publishers)
+
+  //declaro estados 
   const [searchTerm, setSearchTerm] = useState("")
   const [currentPage, setCurrentPage] = useState(1)
 

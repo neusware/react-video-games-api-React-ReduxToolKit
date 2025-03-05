@@ -26,8 +26,8 @@ const HomePage = () => {
     mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
   };
 
-  if (status === 'loading') return <div>Loading...</div>;
-  if (status === 'failed') return <div>Error: {error}</div>;
+  if (status === 'loading') return <div className="text-center text-gray-600 mt-5 ">Cargando...</div>;
+  if (status === 'failed') return <div className="text-center text-red-600">Error: {error}</div>;
 
   return (
     <>
@@ -40,7 +40,7 @@ const HomePage = () => {
           <Carousel
             responsive={responsive}
             swipeable={true}
-            draggable={true}
+            draggable={false }
             showDots={false}
             ssr={true}
             infinite={true}

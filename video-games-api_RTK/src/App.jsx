@@ -1,12 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-import HomePage from "./pages/HomePage"
-import GamesPage from "./pages/GamesPage"
-import GameDetailPage from "./pages/GameDetailPage"
-import GamesByPage from "./pages/GamesByPage"
-import PublisherPage from "./pages/PublisherPage"
-import PublishersPage from "./pages/PublishersPage"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import GamesPage from "./pages/GamesPage";
+import GameDetailPage from "./pages/GameDetailPage";
+import GamesByPage from "./pages/GamesByPage";
+import PublisherPage from "./pages/PublisherPage";
+import PublishersPage from "./pages/PublishersPage";
+import FavoritesPage from './pages/FavoritesPage';
 
 function App() {
   return (
@@ -21,12 +22,13 @@ function App() {
             <Route path="/games/:type/:id" element={<GamesByPage />} />
             <Route path="/publisher/:id" element={<PublisherPage />} />
             <Route path="/publishers" element={<PublishersPage />} />
+            <Route path="/favorites" element={<FavoritesPage />} />
           </Routes>
         </main>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

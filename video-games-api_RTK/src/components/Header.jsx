@@ -25,6 +25,12 @@ function Header() {
               Editores
             </Link>
           </li>
+          <li>
+          <Link to="/favorites" className="hover:text-gray-300">
+            Favoritos
+          </Link>
+          
+          </li>
         </ul>
       </nav>
     </header>

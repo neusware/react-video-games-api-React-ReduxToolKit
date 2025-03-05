@@ -31,7 +31,7 @@ function GamesPage() {
 
   const displayedGames = searchTerm ? searchResults : popularGames;
 
-  if (status === 'loading') return <div>Loading...</div>;
+  if (status === 'loading') return <div>Cargando...</div>;
   if (status === 'failed') return <div>Error: {error}</div>;
 
   return (
@@ -51,7 +51,7 @@ function GamesPage() {
             <GameCard key={game.id} id={game.id} name={game.name} background_image={game.background_image} />
           ))
         ) : (
-          <p>No se encontraron juegos</p>
+          <p>Espere...</p>
         )}
       </div>
 
