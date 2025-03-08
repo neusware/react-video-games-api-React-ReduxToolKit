@@ -37,7 +37,8 @@ const GameDetailPage = () => {
           <div className="p-6">
           <button 
               onClick={toggleFavorite}
-              className={`mb-4 px-4 py-2 rounded ${isFavorite ? 'bg-red-600 text-white' : 'bg-gray-200'} hover:shadow-md transition-shadow duration-300`}
+              className={`mb-4 px-8 py-3 rounded-full  ${isFavorite ? 'bg-red-500  text-white hover:bg-red-600' : ' bg-black text-red-400 hover:text-red-500 rounded-full'} hover:shadow-md transition-shadow duration-300`}
+              /* bg-black text-red-400 px-8 py-3 rounded-full hover:bg-red-600 hover:text-white transition duration-300 inline-block */
             >
               {isFavorite ? 'Eliminar de favoritos' : 'Agregar a favoritos'}
             </button>
