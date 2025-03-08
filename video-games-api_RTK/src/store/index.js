@@ -1,12 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import gamesReducer from './gameSlice';
 import publishersReducer from './publisherSlice';
-import favoritesReducer from './favoritesSlice'; // Importa el reducer de favoritos
-
+import favoritesReducer from './favoritesSlice'; 
+import eventsReducer from './eventSlice'
 export const store = configureStore({
   reducer: {
     games: gamesReducer,
     publishers: publishersReducer,
-    favorites: favoritesReducer, // Añade el reducer de favoritos aquí
+    favorites: favoritesReducer,
+    events: eventsReducer
   },
 });

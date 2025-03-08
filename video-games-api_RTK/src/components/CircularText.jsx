@@ -98,7 +98,7 @@ const CircularText = ({ text, spinDuration = 20, onHover = "speedUp", className 
     >
       {letters.map((letter, i) => {
         const angle = (360 / letters.length) * i
-        const radius = 35 // Ajusta el radio del círculo
+        const radius = 30 // Ajusta el radio del círculo
         const x = radius * Math.cos((angle * Math.PI) / 180)
         const y = radius * Math.sin((angle * Math.PI) / 180)
         const transform = `translate(${x}px, ${y}px) rotate(${angle}deg)`
@@ -111,7 +111,7 @@ const CircularText = ({ text, spinDuration = 20, onHover = "speedUp", className 
               transform,
               transformOrigin: "center",
               WebkitTransform: transform,
-              fontSize: "12px", // Ajusta el tamaño de la fuente
+              fontSize: "10px", // Ajusta el tamaño de la fuente
               fontWeight: "bold", // Hace el texto en negrita
             }}
           >

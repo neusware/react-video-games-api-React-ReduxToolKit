@@ -8,6 +8,8 @@ import GamesByPage from "./pages/GamesByPage";
 import PublisherPage from "./pages/PublisherPage";
 import PublishersPage from "./pages/PublishersPage";
 import FavoritesPage from './pages/FavoritesPage';
+import EventsPage from "./pages/EventsPage";
+import MyEventsPage from "./pages/MyEventsPage";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             <Route path="/publisher/:id" element={<PublisherPage />} />
             <Route path="/publishers" element={<PublishersPage />} />
             <Route path="/favorites" element={<FavoritesPage />} />
+            <Route path="/events" element={<EventsPage />} />
+            <Route path="/my-events" element={<MyEventsPage />} />
           </Routes>
         </main>
         <Footer />
